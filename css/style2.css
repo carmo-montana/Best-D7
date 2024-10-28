@@ -1,0 +1,112 @@
+li {
+    list-style: none;
+}
+
+.nav {
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    list-style-position: inside;
+    position: relative;
+    width: 100%;
+    min-width: 90px;
+    max-width: 14.28%;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    height: 30px;
+    font-family: "Permanent Marker", cursive;
+    /* font-family: "Rubik Wet Paint", system-ui; */
+    /* font: 1.2em Helvetica, Arial, sans-serif; */
+}
+
+
+.nav li {
+    background: none;
+    border-bottom: #333 1px solid;
+    color: #bbb;
+    width: 100%;
+    min-width: 91px;
+    text-align: center;
+    line-height: 1.9em;
+}
+
+.nav li.to li {
+    background: none;
+}
+
+.nav li:hover {
+    background: -moz-linear-gradient(bottom, rgba(32, 33, 39, 0.8), rgba(28, 29, 35, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(18, 3, 19, 0.8), rgba(90, 54, 87, 0.8));
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
+    background: -o-linear-gradient(bottom, rgba(44, 51, 87, 0.8), rgba(35, 39, 62, 0.8));
+    background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
+    text-shadow: #000 .1px .1px 0;
+    border-radius: 7px;
+    color: #a09d9d;
+}
+
+.nav li.to:hover {
+    height: 280px;
+}
+
+#segundo li.to:hover {
+    height: 150px;
+}
+
+#terceiro li.to:hover {
+    height: 150px;
+}
+
+#quarto li.to:hover {
+    height: 52vh;
+}
+
+#quinto li.to:hover {
+    height: 30vh;
+}
+
+#sexto li.to:hover {
+    height: 55vh;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #f64a9a;
+    padding: 0 0 0 0;
+    line-height: 1.9em;
+    text-shadow: #111 -1px -1px 0;
+    -moz-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    z-index: 100;
+}
+
+.sooner {
+    text-align: left;
+    display: none;
+    width: 100%;
+    overflow: visible;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: .7em;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    opacity: 0;
+}
+
+.nav li:hover .sooner,
+.nav li:hover .sooner li:hover {
+    display: block;
+    opacity: 1;
+}
+
+.nav li:hover .sooner li:hover {
+    border-top: thin #6C6 solid;
+    border-left: none;
+}
+
+li .to {
+    display: block;
+}
