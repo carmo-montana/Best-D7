@@ -2,18 +2,25 @@ li {
     list-style: none;
 }
 
+.friday {
+    display: flex;
+    justify-content: center;
+}
+
+
 .nav {
     display: inline-block;
-    float: left;
     list-style-type: none;
     list-style-position: inside;
     position: relative;
     width: 100%;
     min-width: 90px;
     max-width: 14.28%;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    height: 30px;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    /* border-radius: 1px;
+    background-color: #150f0f; */
     font-family: "Permanent Marker", cursive;
     /* font-family: "Rubik Wet Paint", system-ui; */
     /* font: 1.2em Helvetica, Arial, sans-serif; */
@@ -22,12 +29,12 @@ li {
 
 .nav li {
     background: none;
-    border-bottom: #333 1px solid;
+    border-bottom: #000000 1px solid;
     color: #bbb;
     width: 100%;
     min-width: 91px;
     text-align: center;
-    line-height: 1.9em;
+    line-height: 2.2em;
 }
 
 .nav li.to li {
@@ -36,7 +43,7 @@ li {
 
 .nav li:hover {
     background: -moz-linear-gradient(bottom, rgba(32, 33, 39, 0.8), rgba(28, 29, 35, 0.8));
-    background: -webkit-linear-gradient(bottom, rgba(18, 3, 19, 0.8), rgba(90, 54, 87, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(18, 3, 19, 0.8), rgba(41, 67, 41, 0.8));
     background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
     background: -o-linear-gradient(bottom, rgba(44, 51, 87, 0.8), rgba(35, 39, 62, 0.8));
     background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
@@ -50,28 +57,29 @@ li {
 }
 
 #segundo li.to:hover {
-    height: 150px;
+    height: 160px;
 }
 
 #terceiro li.to:hover {
-    height: 150px;
+    height: 160px;
 }
 
 #quarto li.to:hover {
-    height: 52vh;
+    height: 58vh;
 }
 
 #quinto li.to:hover {
-    height: 30vh;
+    height: 34vh;
 }
 
 #sexto li.to:hover {
-    height: 55vh;
+    height: 59vh;
 }
 
 .nav li a {
     text-decoration: none;
-    color: #f64a9a;
+    color: #ffffff;
+    font-weight: bold;
     padding: 0 0 0 0;
     line-height: 1.9em;
     text-shadow: #111 -1px -1px 0;
@@ -80,6 +88,10 @@ li {
     -o-transition: all .1s ease-out;
     transition: all .1s ease-out;
     z-index: 100;
+}
+
+.nav li a:hover {
+    text-shadow: 2px 0 #da7fdd;
 }
 
 .sooner {
@@ -110,3 +122,115 @@ li {
 li .to {
     display: block;
 }
+
+
+
+/* ======= Parte de main ======== */
+
+.container-main {
+    display: flex;
+    float: left;
+    padding: 20px;
+    margin-top: 360px;
+}
+
+.cook {
+    display: block;
+    float: left;
+
+}
+
+.day {
+    width: 100%;
+    margin: 60px 0 10px 0;
+}
+
+
+.cook ul {
+    /* margin: 20px;
+    padding: 0; */
+}
+
+
+.cook h3 {
+    /* font: 2.5em 'bebas_neueregular', Impact, Helvetica, sans-serif; */
+    font-family: "Permanent Marker", cursive;
+    margin: 10px auto 3px;
+    text-align: left;
+    font-size: 35px;
+    color: #6C6;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.cook p {
+    /* display: none; */
+    font-size: .8em;
+    text-align: left;
+    line-height: 1em;
+    margin-top: 5px;
+    background: none;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.cook ul {
+    max-width: 70%;
+    padding: 0 0 0 20px;
+    margin: 0 auto 10px;
+}
+
+.cook ul li {
+    font: italic Georgia, "Times New Roman", Times, serif;
+    line-height: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* .cook {
+    background: -moz-linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
+    background: -webkit-gradient(linear, left bottom, top bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
+    background: -o-linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
+    background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
+    text-shadow: #000 .1px .1px 0;
+    border-radius: 7px;
+} */
+
+
+.cook {
+    position: relative;
+    top: 0;
+    background-color: #0e2813;
+    width: 240px;
+    height: 90px;
+    max-height: 150px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 0 #333;
+    justify-content: space-around;
+    /* margin: 10px; */
+    overflow: hidden;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    opacity: .8;
+}
+
+
+
+
+.cook:hover {
+    position: relative;
+    height: 255px;
+    max-height: 255px;
+    margin-top: -165px;
+}
+
+
+
+/* .cook:hover p {
+    display: block;
+} */
