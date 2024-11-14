@@ -131,13 +131,14 @@ li .to {
     display: flex;
     float: left;
     padding: 20px;
-    margin-top: 360px;
+    margin-top: 310px;
 }
 
 .cook {
     display: block;
     float: left;
-
+    margin: 20px;
+    padding: 20px;
 }
 
 .day {
@@ -155,8 +156,9 @@ li .to {
 .cook h3 {
     /* font: 2.5em 'bebas_neueregular', Impact, Helvetica, sans-serif; */
     font-family: "Permanent Marker", cursive;
+    font-weight: bold;
     margin: 10px auto 3px;
-    text-align: left;
+    text-align: center;
     font-size: 35px;
     color: #6C6;
     padding-top: 10px;
@@ -165,13 +167,12 @@ li .to {
 
 .cook p {
     /* display: none; */
-    font-size: .8em;
-    text-align: left;
+    font-size: .7em;
+    text-align: center;
     line-height: 1em;
     margin-top: 5px;
     background: none;
     color: #fff;
-    font-weight: bold;
 
 }
 
@@ -187,17 +188,6 @@ li .to {
     padding: 0;
     margin: 0;
 }
-
-
-/* .cook {
-    background: -moz-linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
-    background: -webkit-linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
-    background: -webkit-gradient(linear, left bottom, top bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
-    background: -o-linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
-    background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
-    text-shadow: #000 .1px .1px 0;
-    border-radius: 7px;
-} */
 
 
 .cook {
@@ -231,6 +221,35 @@ li .to {
 
 
 
-/* .cook:hover p {
-    display: block;
-} */
+.container_div {
+    display: flex;
+    gap: 8px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.standend {
+    min-width: fit-content;
+}
+
+span {
+    font-size: 60px;
+    font-weight: bold;
+    color: #962d9a;
+}
+
+.NEW {
+    font-size: 16px;
+}
+
+.cook div .jest {
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    text-align: inherit;
+}
