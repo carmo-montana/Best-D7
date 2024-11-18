@@ -1,0 +1,61 @@
+.container_artigo {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    gap: 40px 0;
+    margin-top: -290px;
+}
+
+
+.div--artigo1 {
+    display: flex;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(65, 66, 66, 0.8));
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    margin: 20px;
+    gap: 20px;
+
+}
+
+.split {
+    display: flex;
+    border-radius: 8px;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(65, 66, 66, 0.8));
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+    margin: 20px;
+    gap: 0 20px;
+}
+
+
+.imagem {
+    width: 400px;
+    height: 200px;
+}
+
+.imagem1 {
+    width: 300px;
+    height: 200px;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: rgb(255, 0, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cor {
+    color: #fff;
+    font-size: 1em;
+    text-align: justify;
+}
+
+#A a {
+    color: red;
+}
