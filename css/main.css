@@ -62,12 +62,12 @@
 .cook {
     position: relative;
     top: 0;
-    background-color: #1c0e0e;
+    background-color: #010101;
     width: 240px;
     height: 80px;
     max-height: 150px;
     border-radius: 3px;
-    box-shadow: -1px 1px 0 #333;
+    box-shadow: -1px 1px 0 #474242;
     margin: 10px;
     overflow: hidden;
     -webkit-transition: all .4s ease-out;

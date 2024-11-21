@@ -1,0 +1,22 @@
+.container_principal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(65, 66, 66, 0.8));
+    box-shadow: -1px 1px 0 #333;
+    width: 90px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.redes-social {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    padding: 25px;
+
+}
+
+.socIcon {
+    margin-bottom: 10px;
+}

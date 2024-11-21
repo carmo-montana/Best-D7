@@ -1,0 +1,125 @@
+.better {
+    /* background-color: #bbb; */
+}
+
+li {
+    list-style: none;
+}
+
+
+.friday {
+    display: flex;
+    justify-content: center;
+    padding-top: 500px;
+}
+
+.nav {
+    display: inline-block;
+    list-style-type: none;
+    list-style-position: inside;
+    position: relative;
+    width: 100%;
+    min-width: 90px;
+    max-width: 14.20%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker", cursive;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav li {
+    background: none;
+    border-bottom: #bbb 1px solid;
+    width: 100%;
+    min-width: 91px;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.nav li.to {
+    background: none;
+}
+
+.nav li:hover {
+    background: -moz-linear-gradient(bottom, rgba(32, 33, 39, 0.8), rgba(28, 29, 35, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(84, 86, 99, 0.8), rgba(22, 10, 10, 0.8));
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
+    background: -o-linear-gradient(bottom, rgba(44, 51, 87, 0.8), rgba(35, 39, 62, 0.8));
+    background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
+    text-shadow: #000 .1px .1px 0;
+    border-radius: 7px;
+    color: #a09d9d;
+}
+
+
+
+.nav li.to:hover {
+    height: 280px;
+}
+
+#Segundo li.to:hover {
+    height: 380px;
+}
+
+#terceiro li.to:hover {
+    height: 220px;
+}
+
+#quarto li.to:hover {
+    height: 380px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 0 0 0;
+    line-height: 1.9em;
+    text-shadow: #111 -1px -1px 0;
+    -moz-transition: all .1s ease-out;
+    -webkit-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out;
+    z-index: 100;
+}
+
+.nav li a:hover {
+    text-shadow: #ff1b1b 2px 0;
+}
+
+.sooner {
+    text-align: left;
+    display: none;
+    width: 100%;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    opacity: 0;
+}
+
+.nav li:hover .sooner,
+.nav li:hover .sooner li:hover {
+    display: block;
+    opacity: 1;
+}
+
+.nav li:hover .sooner li:hover {
+    border-top: thin rgb(255, 20, 20) solid;
+    border-left: none;
+}
+
+
+h1 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+    right: 240px;
+    padding-top: 400px;
+}
