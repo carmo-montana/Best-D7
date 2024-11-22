@@ -11,6 +11,8 @@ li {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .nav {
@@ -25,7 +27,7 @@ li {
     margin: 0;
     padding: 0;
     font-family: "Permanent Marker", cursive;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(28, 8, 8, 0.8);
 }
 
 .nav li {
@@ -59,7 +61,7 @@ li {
 }
 
 #Segundo li.to:hover {
-    height: 380px;
+    height: 420px;
 }
 
 #terceiro li.to:hover {
@@ -67,7 +69,7 @@ li {
 }
 
 #quarto li.to:hover {
-    height: 380px;
+    height: 420px;
 }
 
 .nav li a {

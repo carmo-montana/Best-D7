@@ -1,4 +1,7 @@
 body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
     background: #000000 url('../imagens/_Mafia\ Boss\ in\ a\ Green\ Tie\ [Noir\,\ Crime]_\ Photographic\ Print\ for\ Sale\ by\ RESToRAPTOR.jpg');
     background-size: 1000px 550px;
     background-repeat: no-repeat;
@@ -36,9 +39,9 @@ a:visited {
 }
 
 ul {
-    margin-bottom: 20px;
-    margin-left: 30px;
-    margin: 4px 0 5px 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding: 4px 0 5px 30px;
     font-size: 120%;
     list-style: outside;
 }

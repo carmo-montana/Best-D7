@@ -1,11 +1,19 @@
 .container-main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 100px;
+    padding-top: 300px;
+}
+
+/* .roomante {
     display: flex;
+    justify-content: space-between;
     float: left;
     padding: 285px;
     margin-top: 50px;
     justify-content: center;
-}
-
+} */
 
 .cook {
     display: block;
@@ -16,7 +24,7 @@
 
 .day {
     width: 100%;
-    margin: 60px 0 10px 0;
+    padding: 60px 0 10px 0;
 }
 
 .cook ul {
@@ -62,7 +70,7 @@
 .cook {
     position: relative;
     top: 0;
-    background-color: #010101;
+    background-color: #221515;
     width: 240px;
     height: 80px;
     max-height: 150px;
@@ -74,7 +82,7 @@
     -moz-transition: all .4s ease-out;
     -o-transition: all .4s ease-out;
     transition: all .4s ease-out;
-    opacity: .8;
+    opacity: .9;
 }
 
 .cook:hover {
@@ -112,7 +120,7 @@ span {
 
 #NEW {
     font-size: 16px;
-    color: red;
+    color: rgb(255, 8, 8);
 }
 
 .cook div .jest {
