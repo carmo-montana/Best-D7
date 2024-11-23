@@ -1,0 +1,96 @@
+.container-principal {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container-section {
+    display: flex;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(57, 52, 52, 0.8));
+    box-shadow: -1px 0 1px 0 #bbb;
+    border-radius: 8px;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+}
+
+
+.img {
+    width: 5vw;
+    height: auto;
+}
+
+.div-container {
+    display: flex;
+    gap: 60px;
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.section-container {
+    position: relative;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(135, 135, 135, 0.8));
+    width: 15vw;
+    height: 20vh;
+    padding-top: 20px;
+    justify-content: space-between;
+    /* padding: 30px 90px; */
+}
+
+.links-redes {
+
+    display: inline-block;
+    padding: 0 10px;
+}
+
+
+
+
+.estiloP {
+    padding: 10px 0;
+}
+
+strong {
+    font-size: 1em;
+    font-weight: bold;
+    color: #878787;
+
+}
+
+h2 {
+    font-size: 1.6em;
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    color: #921919;
+}
+
+.h2 {
+    font-size: .7em;
+    color: #878787;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #878787;
+}
+
+span {
+    color: #665656;
+}
+
+
+.descricao {
+    font-family: "Geist Mono", monospace;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 50%;
+    text-align: justify;
+    color: #bbb;
+}
