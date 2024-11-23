@@ -34,26 +34,51 @@
 }
 
 .section-container {
-    position: relative;
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(135, 135, 135, 0.8));
-    width: 15vw;
-    height: 20vh;
-    padding-top: 20px;
-    justify-content: space-between;
-    /* padding: 30px 90px; */
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.8));
+    border-radius: 8px;
+    width: 30%;
+    height: 30vh;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 0;
+    background-color: #302828;
+    border-radius: 8px 8px 0 0;
+    font-family: "Geist Mono", monospace;
+    color: #bbb;
 }
 
 .links-redes {
-
-    display: inline-block;
-    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+    gap: 0 40px;
 }
 
+.grupo {
+    border-radius: 20px;
+}
+
+.links-redes a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #bbb;
+    font-family: "Permanent Marker", cursive;
+}
 
 
 
 .estiloP {
     padding: 10px 0;
+}
+
+.estiloP a {
+    color: #921919;
 }
 
 strong {
@@ -62,6 +87,7 @@ strong {
     color: #878787;
 
 }
+
 
 h2 {
     font-size: 1.6em;
@@ -93,4 +119,41 @@ span {
     width: 50%;
     text-align: justify;
     color: #bbb;
+}
+
+.descricao a {
+    color: #921919;
+}
+
+
+/* ======= footer ======== */
+
+.container-footer {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 30vh;
+    background: -webkit-linear-gradient(bottom, rgba(72, 10, 35, 0.8), rgba(24, 19, 24, 0.8));
+    border-radius: 8px 8px 0 0;
+
+}
+
+.div-footer p {
+    font-family: "Geist Mono", monospace;
+    font-weight: bold;
+    color: #bbb;
+    font-size: 18px;
+}
+
+.div-footer img {
+    border-radius: 20px;
 }
