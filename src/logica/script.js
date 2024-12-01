@@ -5,7 +5,7 @@ submitBtn.addEventListener("click", () => {
     const senha = senhaInput.value;
 
     if (senha === "1337") {
-        window.location.href = "https://defcon.org/"
+        window.location.href = "enigmaImg.html"
     } else {
         alert("Senha incorreta.")
     }

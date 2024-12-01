@@ -1,0 +1,31 @@
+/* ======= footer ======== */
+
+.container-footer {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 30vh;
+    background: -webkit-linear-gradient(bottom, rgba(72, 10, 35, 0.8), rgba(24, 19, 24, 0.8));
+    border-radius: 8px 8px 0 0;
+
+}
+
+.div-footer p {
+    font-family: "Geist Mono", monospace;
+    font-weight: bold;
+    color: #bbb;
+    font-size: 18px;
+}
+
+.div-footer img {
+    border-radius: 20px;
+}
