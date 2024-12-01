@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+
+    background-color: #000;
+}
+
+.container {
+    color: green;
+    font-size: 40px;
+
+    font-family: "Iceland", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#text {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    margin: 50px auto;
+    border: 1px dashed transparent;
+    transition: backgrond-color 0.3s ease;
+}
+
+#text:hover {
+    background-color: rgba(49, 48, 48, 0.1);
+    width: 50%;
+}
+
+
+#hos-link {
+    display: none;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#hos-link:hover {
+    color: #0056b3;
+}

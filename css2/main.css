@@ -48,6 +48,7 @@
 }
 
 
+
 .div-container {
     display: flex;
     gap: 60px;
@@ -146,6 +147,10 @@ span {
     color: #bbb;
 }
 
-.descricao a {
+.descricao .link-enigma {
     color: #921919;
+}
+
+.descricao .link-enigma:hover {
+    color: #560404;
 }
