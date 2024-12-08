@@ -73,16 +73,17 @@ h2 {
     width: 100%;
     max-width: 1000px;
     margin: auto 230px;
-    padding: 20px;
+    padding: 35px;
 }
 
 .subNav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0 20px;
+    gap: 0 30px;
+    padding: 0 20px;
 
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(8, 7, 7, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(69, 12, 60, 0.8), rgba(8, 7, 7, 0.8));
     border-radius: 30px;
     height: 60px;
     width: 700px;
@@ -97,7 +98,7 @@ ul li {
 li a {
     font-size: 20px;
     text-decoration: none;
-    color: #96c;
+    color: rgb(217, 52, 132);
 
     font-family: "Iceland", serif;
     font-weight: 400;
@@ -130,7 +131,7 @@ input:focus {
 
 #search {
     color: #000000;
-    background-color: rgb(115, 7, 123);
+    background-color: rgb(137, 1, 144);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,4 +170,105 @@ input {
     -webkit-transition: border linear .2s, box-shadow linear .2s;
     -o-transition: border linear .2s, box-shadow linear .2s;
     transition: border linear .2s, box-shadow linear .2s;
+}
+
+/* =========== Parte princípal ========== */
+
+table {
+    width: 90%;
+    max-width: 1000px;
+    min-width: 260px;
+    margin: auto 10px;
+    padding: 20px;
+
+
+    border-radius: 30px;
+    box-shadow: 1px 1px 1px #bbb;
+    margin: 110px;
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(46, 5, 42, 0.8));
+}
+
+
+
+tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    padding: 30px;
+    gap: 0 300px;
+}
+
+tr {
+    border-bottom: transparent 1px solid;
+    width: 100%;
+}
+
+td {
+    font-family: "Geist Mono", serif;
+    font-size: 1em;
+
+}
+
+tr:hover {
+    background-color: #525151;
+    border-radius: 8px;
+    -webkit-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+
+}
+
+a {
+    color: #ce4c9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.date {
+    color: #fa8ae9;
+    text-align: right;
+}
+
+/* ============ footer ============== */
+
+
+.container-footer {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.div-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 20vh;
+    background: linear-gradient(120deg, #000 50%, #270119 100%);
+    border-radius: 8px 8px 0 0;
+
+}
+
+.div-footer p {
+    font-family: "Geist Mono", monospace;
+    font-weight: bold;
+    color: #bbb;
+    font-size: 13px;
+}
+
+.div-footer .imagem {
+    border-radius: 100px;
+}
+
+.imagem {
+    height: 40px;
+    width: 40px;
 }
