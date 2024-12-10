@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+
+body {
+    background: linear-gradient(92deg, #000 50%, #96c 100%);
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto 10px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 20px;
+}
+
+.container-div img {
+    width: 80px;
+    height: auto;
+    border-radius: 40px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: "Iceland", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: #96c 1px 1px 0;
+}
+
+.container-article {
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+}
+
+.rooment {
+    padding: 20px;
+
+}
+
+.size {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: #96c 1px 1px 0;
+    padding-bottom: 10px;
+}
+
+.text {
+    text-align: justify;
+    font-size: 17px;
+}
+
+.article {
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+    text-align: justify;
+    font-size: 20px;
+
+    padding: 20px;
+}
+
+span {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: #96c 1px 1px 0;
+}
+
+.text2 {
+    padding-top: 10px;
+}
