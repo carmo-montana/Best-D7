@@ -34,15 +34,20 @@
 
 
 .cook h3 {
-    font-family: "Permanent Marker", cursive;
-    font-weight: bold;
+    /* font-family: "Permanent Marker", cursive;
+    font-weight: bold; */
     margin: 10px auto 3px;
     text-align: center;
     font-size: 30px;
-    color: rgb(255, 29, 29);
+    color: rgb(21, 255, 0);
     padding-top: -3px;
     padding-bottom: 15px;
     margin-top: -1px;
+
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .cook p {
@@ -52,6 +57,8 @@
     margin-top: 5px;
     background: none;
     color: #fff;
+
+    text-align: justify;
 }
 
 .cook ul {
@@ -61,10 +68,15 @@
 }
 
 .cook ul li {
-    font: italic Georgia, "Times New Roman", Times, serif;
+    /* font: italic Georgia, "Times New Roman", Times, serif; */
     line-height: 1.2em;
     padding: 0;
     margin: 0;
+
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .cook {
@@ -120,7 +132,7 @@ img {
 
 #NEW {
     font-size: 16px;
-    color: rgb(255, 8, 8);
+    color: rgb(65, 152, 252);
 }
 
 .cook div .jest {

@@ -26,8 +26,12 @@ li {
     height: 40px;
     margin: 0;
     padding: 0;
-    font-family: "Permanent Marker", cursive;
-    background-color: rgba(28, 8, 8, 0.8);
+    /* font-family: "Permanent Marker", cursive; */
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    background-color: rgba(8, 28, 11, 0.8);
 }
 
 .nav li {
@@ -45,7 +49,7 @@ li {
 
 .nav li:hover {
     background: -moz-linear-gradient(bottom, rgba(32, 33, 39, 0.8), rgba(28, 29, 35, 0.8));
-    background: -webkit-linear-gradient(bottom, rgba(84, 86, 99, 0.8), rgba(22, 10, 10, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(58, 82, 65, 0.8), rgba(0, 5, 1, 0.8));
     background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
     background: -o-linear-gradient(bottom, rgba(44, 51, 87, 0.8), rgba(35, 39, 62, 0.8));
     background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
@@ -61,7 +65,7 @@ li {
 }
 
 #Segundo li.to:hover {
-    height: 420px;
+    height: 410px;
 }
 
 #terceiro li.to:hover {
@@ -69,7 +73,7 @@ li {
 }
 
 #quarto li.to:hover {
-    height: 420px;
+    height: 380px;
 }
 
 .nav li a {
@@ -87,7 +91,7 @@ li {
 }
 
 .nav li a:hover {
-    text-shadow: #ff1b1b 2px 0;
+    text-shadow: #1bff54 2px 0;
 }
 
 .sooner {
@@ -111,6 +115,6 @@ li {
 }
 
 .nav li:hover .sooner li:hover {
-    border-top: thin rgb(255, 20, 20) solid;
+    border-top: thin rgb(20, 255, 32) solid;
     border-left: none;
 }
