@@ -28,15 +28,15 @@ li {
     padding: 0;
     /* font-family: "Permanent Marker", cursive; */
     font-family: "Geist Mono", serif;
-    font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    background-color: rgba(28, 9, 36, 0.8);
+    background-color: rgba(28, 9, 36, 0.3);
+    border-bottom: #bbb 1px solid;
 }
 
 .nav li {
     background: none;
-    border-bottom: #bbb 1px solid;
+
     width: 100%;
     min-width: 91px;
     text-align: center;
@@ -65,15 +65,15 @@ li {
 }
 
 #Segundo li.to:hover {
-    height: 410px;
+    height: 370px;
 }
 
 #terceiro li.to:hover {
-    height: 220px;
+    height: 180px;
 }
 
 #quarto li.to:hover {
-    height: 380px;
+    height: 370px;
 }
 
 .nav li a {
@@ -101,7 +101,7 @@ li {
     overflow: visible;
     margin: 0;
     padding: 0;
-    font-size: .8em;
+    font-size: .7em;
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out;

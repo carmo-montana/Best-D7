@@ -3,8 +3,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    background: rgb(25, 1, 49) url('../imagens/rua.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 550px;
+    background-position: center;
+    background-position: top;
 
-    background: linear-gradient(270deg, rgb(27, 11, 61) 10%, #000 100%);
+    /* background: linear-gradient(270deg, rgb(27, 11, 61) 10%, #000 100%); */
 }
 
 header,
