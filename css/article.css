@@ -1,4 +1,4 @@
-.container_artigo {
+/* .container_artigo {
     width: 90%;
     max-width: 1000px;
 
@@ -61,4 +61,88 @@ h4 {
 
 #A a {
     color: red;
+}
+
+ */
+
+.container-article {
+    display: flex;
+    justify-content: center;
+    padding-top: 380px;
+}
+
+.title {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    top: 5px;
+
+}
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    /* width: 350px;
+    height: 400px; */
+    /* left: -300px; */
+    border: 2px solid #333;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(65, 66, 66, 0.8));
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover {
+    width: 350px;
+    height: 350px;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+#text {
+    padding: 10px 40px;
+    text-align: justify;
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    /* white-space: nowrap; */
+    /* Evitar quebra de linha */
+    opacity: 0;
+    /* Começa invisível */
+    visibility: hidden;
+    /* Não visível inicialmente */
+    display: inline-block;
+    width: 0;
+    /* Começa com largura 0 */
+    transition: width 3s steps(30, end), opacity 1s ease-in-out;
+}
+
+.box:hover #text {
+    opacity: 1;
+    visibility: visible;
+    width: auto;
+    /* Faz o texto ocupar o espaço */
+    animation: typing 3s steps(30, end) forwards;
+}
+
+/* Efeito de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }

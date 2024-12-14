@@ -1,14 +1,10 @@
 body {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background: #000000 url('../imagens/Leonardo_Phoenix_Crie_uma_imagem_com_fundo_preto_e_linhas_de_c_3\ \(1\).jpg');
-    background-size: 1000px 550px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: top;
-    /* opacity: 0.7; */
 
+    background: linear-gradient(270deg, rgb(27, 11, 61) 10%, #000 100%);
 }
 
 header,
