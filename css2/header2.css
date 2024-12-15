@@ -24,13 +24,16 @@ li {
     height: 40px;
     margin: 0;
     padding: 0;
-    font-family: "Permanent Marker", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+    font-family: "Geist Mono", serif;
+    font-weight: bold;
+    font-style: normal;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .nav li {
     background: none;
-    border-bottom: #bbb 1px solid;
+    /* border-bottom: #bbb 1px solid; */
     width: 100%;
     min-width: 91px;
     text-align: center;
@@ -43,8 +46,8 @@ li {
 
 .nav li:hover {
     background: -moz-linear-gradient(bottom, rgba(32, 33, 39, 0.8), rgba(28, 29, 35, 0.8));
-    background: -webkit-linear-gradient(bottom, rgba(84, 86, 99, 0.8), rgba(22, 10, 10, 0.8));
-    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, rgba(124, 126, 136, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
+    background: -webkit-linear-gradient(bottom, rgba(30, 31, 35, 0.8), rgba(22, 10, 10, 0.8));
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%, rgba(34, 34, 38, 0.8), color-stop(100%, rgba(104, 106, 116, 0.8))));
     background: -o-linear-gradient(bottom, rgba(44, 51, 87, 0.8), rgba(35, 39, 62, 0.8));
     background: linear-gradient(bottom, rgba(124, 126, 136, 0.8), rgba(104, 106, 116, 0.8));
     text-shadow: #000 .1px .1px 0;
@@ -116,11 +119,14 @@ li {
 
 h1 {
     position: absolute;
-    color: #919191;
+    color: #ff0000;
     font-size: 60px;
     font-weight: bold;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Geist Mono", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* font-family: "Permanent Marker", cursive; */
     right: 240px;
     padding-top: 400px;
-    text-shadow: 1px 1px 1px #ffffff;
+    /* text-shadow: 1px 1px 1px #ffffff; */
 }

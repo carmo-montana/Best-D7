@@ -15,7 +15,7 @@
     justify-content: center;
 } */
 
-.cook {
+/* .cook {
     display: block;
     float: left;
     padding: 20px;
@@ -34,8 +34,8 @@
 
 
 .cook h3 {
-    /* font-family: "Permanent Marker", cursive;
-    font-weight: bold; */
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
     margin: 10px auto 3px;
     text-align: center;
     font-size: 30px;
@@ -48,9 +48,9 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-}
+} */
 
-.cook p {
+/* .cook p {
     font-size: .7em;
     text-align: center;
     line-height: 1em;
@@ -68,7 +68,7 @@
 }
 
 .cook ul li {
-    /* font: italic Georgia, "Times New Roman", Times, serif; */
+    font: italic Georgia, "Times New Roman", Times, serif;
     line-height: 1.2em;
     padding: 0;
     margin: 0;
@@ -77,9 +77,9 @@
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-}
+} */
 
-.cook {
+/* .cook {
     position: relative;
     top: 0;
     background-color: #09100a;
@@ -122,7 +122,7 @@ img {
 
 .standend {
     min-width: fit-content;
-}
+} */
 
 /* span {
     font-size: 60px;
@@ -130,7 +130,7 @@ img {
     color: #962d9a;
 } */
 
-#NEW {
+/* #NEW {
     font-size: 16px;
     color: rgb(65, 152, 252);
 }
@@ -149,4 +149,4 @@ img {
 
 .cubos {
     margin-bottom: 5px;
-}
+} */
