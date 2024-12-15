@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 350px;
+    padding-top: 340px;
     color: #fff;
     gap: 0 10px;
 }
@@ -83,7 +83,7 @@ span {
 
 .d {
     display: flex;
-    padding: 5px;
+    padding: 1px;
     gap: 0 20px;
 }
 
