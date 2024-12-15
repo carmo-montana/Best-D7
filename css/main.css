@@ -1,152 +1,85 @@
 .container-main {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 100px 100px;
-    padding-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto 10px;
+    padding: 20px;
 }
 
-/* .roomante {
+.blogs {
+    color: #fff;
+    padding: 10px 0;
+    margin: 0 3cqh;
+}
+
+h2 {
+    color: rgb(146, 146, 146);
+    font-size: 1.8em;
+    padding-bottom: 10px;
+}
+
+strong {
+    color: #7c7c7c;
+    font-size: 1.1em;
+}
+
+
+
+
+.subNav {
+    position: absolute;
+    top: 550px;
     display: flex;
     justify-content: space-between;
-    float: left;
-    padding: 285px;
-    margin-top: 50px;
-    justify-content: center;
-} */
-
-/* .cook {
-    display: block;
-    float: left;
-    padding: 20px;
-    margin: 20px;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 300px;
+    height: 160px;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: -1px 1px 0 #bbb;
+    background: -webkit-linear-gradient(bottom, rgba(22, 9, 43, 0.6), rgba(49, 49, 49, 0.6));
 }
 
-.day {
-    width: 100%;
-    padding: 60px 0 10px 0;
-}
-
-.cook ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-.cook h3 {
-    font-family: "Permanent Marker", cursive;
-    font-weight: bold;
-    margin: 10px auto 3px;
+h3 {
     text-align: center;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    padding-top: -3px;
-    padding-bottom: 15px;
-    margin-top: -1px;
-
-    font-family: "Geist Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-} */
-
-/* .cook p {
-    font-size: .7em;
-    text-align: center;
-    line-height: 1em;
-    margin-top: 5px;
-    background: none;
-    color: #aeaeae;
-
-    text-align: justify;
+    margin: 10px 0;
+    font-size: 1.3em;
+    color: #bbb;
 }
 
-.cook ul {
-    max-width: 70%;
-    padding: 0 0 0 20px;
-    margin: 0 auto 10px;
-}
-
-.cook ul li {
-    font: italic Georgia, "Times New Roman", Times, serif;
-    line-height: 1.2em;
-    padding: 0;
-    margin: 0;
-
-    font-family: "Geist Mono", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-} */
-
-/* .cook {
-    position: relative;
-    top: 0;
-    background-color: #09100a;
-    width: 240px;
-    height: 80px;
-    max-height: 150px;
-    border-radius: 3px;
-    box-shadow: -1px 1px 0 #474242;
-    margin: 10px;
-    overflow: hidden;
-    -webkit-transition: all .4s ease-out;
-    -moz-transition: all .4s ease-out;
-    -o-transition: all .4s ease-out;
-    transition: all .4s ease-out;
-    opacity: .9;
-}
-
-.cook:hover {
-    position: relative;
-    height: 255px;
-    max-height: 255px;
-    margin-top: -165px;
-}
-
-.container_div {
+.string {
     display: flex;
-    gap: 8px;
-    margin-top: 5px;
-    align-content: space-around;
-}
-
-
-
-img {
-    width: 40px;
-    height: 40px;
-}
-
-
-
-.standend {
-    min-width: fit-content;
-} */
-
-/* span {
-    font-size: 60px;
-    font-weight: bold;
-    color: #962d9a;
-} */
-
-/* #NEW {
-    font-size: 16px;
-    color: rgb(65, 152, 252);
-}
-
-.cook div .jest {
-    font-size: 13px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: normal;
-    text-align: inherit;
+    justify-content: space-between;
+    padding: 30px 20px;
 
 }
 
-.container_div .next {
-    text-align: justify;
+.container-redes {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 300px;
+    height: 160px;
+    border-radius: 20px;
+    box-shadow: -1px 1px 0 #bbb;
+    background: -webkit-linear-gradient(bottom, rgba(33, 19, 58, 0.6), rgba(49, 49, 49, 0.6));
 }
 
-.cubos {
-    margin-bottom: 5px;
-} */
+.function {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.Grupos {
+    border-radius: 20px;
+}
+
+a {
+    text-align: center;
+}

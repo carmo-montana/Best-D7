@@ -10,8 +10,9 @@ li {
 .friday {
     display: flex;
     justify-content: center;
-    padding-top: 500px;
+    padding-top: 420px;
 }
+
 
 .nav {
     display: inline-block;
@@ -29,15 +30,19 @@ li {
     font-weight: bold;
     font-style: normal;
     background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
 }
 
 .nav li {
     background: none;
-    /* border-bottom: #bbb 1px solid; */
     width: 100%;
     min-width: 91px;
     text-align: center;
     line-height: 1.7em;
+}
+
+.to {
+    border-bottom: #bbb 1px solid;
 }
 
 .nav li.to {
@@ -62,7 +67,7 @@ li {
 }
 
 #Segundo li.to:hover {
-    height: 379px;
+    height: 350px;
 }
 
 #terceiro li.to:hover {
@@ -119,14 +124,14 @@ li {
 
 h1 {
     position: absolute;
-    color: #ff0000;
+    color: #d8d8d8;
     font-size: 60px;
     font-weight: bold;
     font-family: "Geist Mono", serif;
     font-optical-sizing: auto;
     font-style: normal;
     /* font-family: "Permanent Marker", cursive; */
-    right: 240px;
-    padding-top: 400px;
+    right: 180px;
+    padding-top: 340px;
     /* text-shadow: 1px 1px 1px #ffffff; */
 }

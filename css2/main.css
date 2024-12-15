@@ -22,9 +22,8 @@
 .title {
     text-align: center;
     font-size: 1.5em;
-    color: rgb(255, 3, 3);
+    color: rgb(255, 255, 255);
 }
-
 
 
 .container__div {
@@ -60,10 +59,10 @@
 }
 
 .section-container {
-    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(100, 100, 100, 0.8));
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(63, 62, 62, 0.9));
     border-radius: 8px;
     width: 30%;
-    height: 30vh;
+    height: 28vh;
 }
 
 .titulo {
@@ -71,10 +70,10 @@
     font-size: 25px;
     font-weight: bold;
     padding: 5px 0;
-    background-color: #302828;
+    background-color: #292929;
     border-radius: 8px 8px 0 0;
     font-family: "Geist Mono", monospace;
-    color: #bbb;
+    color: #6fbeff;
 }
 
 .links-redes {
@@ -108,7 +107,7 @@
 }
 
 #link {
-    color: #921919;
+    color: rgb(110, 158, 247);
 }
 
 strong {
@@ -121,10 +120,9 @@ strong {
 
 h2 {
     font-size: 1.6em;
-    font-family: "Permanent Marker", cursive;
-    font-weight: bold;
-    color: #a31818;
-    text-shadow: 1px 1px 1px #bbb;
+    font-family: "Iceland", serif;
+    font-style: normal;
+    color: #6fbeff;
 }
 
 .h2 {
@@ -134,8 +132,9 @@ h2 {
 }
 
 h3 {
+    font-family: "Iceland", serif;
+    font-style: normal;
     font-size: 1.1em;
-    font-weight: bold;
     color: #878787;
 }
 
@@ -154,11 +153,11 @@ span {
 }
 
 .descricao .link-enigma {
-    color: #921919;
+    color: #6fbeff;
 }
 
 .descricao .link-enigma:hover {
-    color: #560404;
+    color: #969292;
 }
 
 
@@ -173,15 +172,15 @@ span {
     width: 100%;
     text-align: center;
     color: #bbb;
-    font-family: "Permanent Marker", cursive;
+    font-family: "Iceland", serif;
+    font-style: normal;
     padding: 10px 0;
 }
 
 .fm {
-    color: #be0808;
+    color: #6fbeff;
     font-size: 30px;
     font-weight: bold;
-    text-shadow: 1px 1px 1px #bbb;
 }
 
 .radio .trans {
