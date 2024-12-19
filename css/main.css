@@ -72,6 +72,11 @@ h3 {
     padding: 20px;
 }
 
+.string img:hover {
+    width: 30px;
+    height: 30px;
+}
+
 .Grupos {
     border-radius: 20px;
 }
