@@ -3,7 +3,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    background: rgb(25, 1, 49) url('../imagens/rua.jpg');
+    background: rgb(0, 0, 0) url('../imagens/principal.jpg');
     background-repeat: no-repeat;
     background-size: 100% 550px;
     background-position: center;
