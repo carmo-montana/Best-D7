@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeMaster</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6b5b95, #d64161);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .text-display {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        #typing-area {
+            width: 100%;
+            height: 100px;
+            margin: 15px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            resize: none;
+            outline: none;
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-around;
+        }
+        .action-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background: #d64161;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .action-button:hover {
+            background: #bf3a52;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TypeMaster</h1>
+        <p>Transforme sua digitação em uma aventura!</p>
+        <div class="text-display" id="text-display">Clique no botão para começar!</div>
+        <textarea id="typing-area" placeholder="Comece a digitar..." disabled></textarea>
+        <div class="stats">
+            <div><span id="wpm">0</span> WPM</div>
+            <div><span id="accuracy">100</span>%</div>
+        </div>
+        <div class="actions">
+            <button class="action-button" id="start-button">Prática</button>
+            <button class="action-button">Competições</button>
+            <button class="action-button">Estatísticas</button>
+        </div>
+    </div>
+
+    <script>
+        const textSamples = [
+            "O rápido cachorro marrom pula sobre o preguiçoso cão.",
+            "Praticar digitação melhora sua precisão e velocidade.",
+            "A programação é tanto arte quanto ciência.",
+            "JavaScript é uma ferramenta poderosa para desenvolvimento web.",
+            "A prática leva à perfeição, então continue praticando!"
+        ];
+
+        const textDisplay = document.getElementById("text-display");
+        const typingArea = document.getElementById("typing-area");
+        const wpmElement = document.getElementById("wpm");
+        const accuracyElement = document.getElementById("accuracy");
+        const startButton = document.getElementById("start-button");
+
+        let startTime;
+        let timer;
+        let currentText;
+
+        function startPractice() {
+            currentText = textSamples[Math.floor(Math.random() * textSamples.length)];
+            textDisplay.textContent = currentText;
+            typingArea.value = "";
+            typingArea.disabled = false;
+            typingArea.focus();
+            startTime = Date.now();
+            timer = setInterval(updateStats, 100);
+        }
+
+        function updateStats() {
+            const elapsedTime = (Date.now() - startTime) / 1000;
+            const typedText = typingArea.value;
+            const correctChars = typedText.split('').filter((char, i) => char === currentText[i]).length;
+            const accuracy = (correctChars / typedText.length || 1) * 100;
+            const wordsTyped = typedText.split(' ').filter(word => word).length;
+            const wpm = Math.floor((wordsTyped / (elapsedTime / 60)) || 0);
+
+            wpmElement.textContent = wpm;
+            accuracyElement.textContent = Math.floor(accuracy);
+
+            if (typedText === currentText) finishPractice();
+        }
+
+        function finishPractice() {
+            clearInterval(timer);
+            typingArea.disabled = true;
+            const accuracy = parseInt(accuracyElement.textContent);
+            const wpm = parseInt(wpmElement.textContent);
+
+            let feedback = "";
+            if (accuracy < 90) feedback += "Foque na precisão ao digitar mais devagar. ";
+            if (wpm < 40) feedback += "Melhore sua velocidade praticando diariamente.";
+            if (!feedback) feedback = "Excelente! Continue praticando para se manter afiado.";
+
+            alert(`Fim da prática!\nPrecisão: ${accuracy}%\nPalavras por minuto: ${wpm}\n\nDica: ${feedback}`);
+        }
+
+        startButton.addEventListener("click", startPractice);
+        typingArea.addEventListener("input", updateStats);
+    </script>
+</body>
+</html>

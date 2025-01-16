@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .text-container {
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        #typing-area {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        .stats {
+            margin-top: 20px;
+        }
+        .stats span {
+            font-weight: bold;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Typing Practice</h1>
+    <div class="text-container">
+        <p id="text">Click the button to start typing practice!</p>
+    </div>
+    <textarea id="typing-area" placeholder="Start typing here..." disabled></textarea>
+    <div class="stats">
+        <p>Time: <span id="time">0</span> seconds</p>
+        <p>Accuracy: <span id="accuracy">100</span>%</p>
+        <p>Words Per Minute: <span id="wpm">0</span></p>
+    </div>
+    <button id="start-button">Start Practice</button>
+
+    <script>
+        const textSamples = [
+            "The quick brown fox jumps over the lazy dog.",
+            "Typing fast and accurately is a valuable skill.",
+            "Practice makes perfect, so keep at it!",
+            "JavaScript is a versatile programming language.",
+            "Success is the result of preparation and hard work."
+        ];
+
+        const textElement = document.getElementById("text");
+        const typingArea = document.getElementById("typing-area");
+        const timeElement = document.getElementById("time");
+        const accuracyElement = document.getElementById("accuracy");
+        const wpmElement = document.getElementById("wpm");
+        const startButton = document.getElementById("start-button");
+
+        let startTime;
+        let timer;
+        let currentText;
+
+        function startPractice() {
+            currentText = textSamples[Math.floor(Math.random() * textSamples.length)];
+            textElement.textContent = currentText;
+            typingArea.value = "";
+            typingArea.disabled = false;
+            typingArea.focus();
+            startTime = Date.now();
+            timer = setInterval(updateStats, 100);
+        }
+
+        function updateStats() {
+            const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+            timeElement.textContent = elapsedTime;
+
+            const typedText = typingArea.value;
+            let correctChars = 0;
+            for (let i = 0; i < typedText.length; i++) {
+                if (typedText[i] === currentText[i]) {
+                    correctChars++;
+                }
+            }
+
+            const accuracy = (correctChars / typedText.length || 1) * 100;
+            accuracyElement.textContent = Math.floor(accuracy);
+
+            const wordsTyped = typedText.split(" ").filter(word => word).length;
+            const wpm = Math.floor((wordsTyped / (elapsedTime / 60)) || 0);
+            wpmElement.textContent = wpm;
+
+            if (typedText === currentText) {
+                finishPractice();
+            }
+        }
+
+        function finishPractice() {
+            clearInterval(timer);
+            typingArea.disabled = true;
+            const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+            const accuracy = parseInt(accuracyElement.textContent);
+            const wpm = parseInt(wpmElement.textContent);
+
+            let feedback = "";
+            if (accuracy < 90) {
+                feedback += "Try to focus on accuracy by typing slower and ensuring each word matches the sample text. ";
+            }
+            if (wpm < 40) {
+                feedback += "Work on your speed by practicing regularly and trying to type without looking at the keyboard.";
+            }
+            if (!feedback) {
+                feedback = "Excellent work! Keep practicing to maintain your skills.";
+            }
+
+            alert(`Practice completed!\nTime: ${elapsedTime} seconds\nAccuracy: ${accuracy}%\nWords Per Minute: ${wpm}\n\nFeedback: ${feedback}`);
+        }
+
+        startButton.addEventListener("click", () => {
+            startPractice();
+        });
+
+        typingArea.addEventListener("input", updateStats);
+    </script>
+</body>
+</html>

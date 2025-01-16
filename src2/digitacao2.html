@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TypeMaster</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f4; margin: 0; padding: 0; }
+        #container { width: 60%; margin: auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; }
+        p { color: #777; }
+        #typing-area { margin-top: 20px; }
+        #stats { margin-top: 20px; }
+        .button { margin: 10px; padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        .button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>TypeMaster</h1>
+        <p>Transforme sua digitação em uma aventura!</p>
+        <div id="typing-area">
+            <p id="target-text">O rápido cachorro marrom pula sobre o preguiçoso cão.</p>
+            <input type="text" id="input-text" placeholder="Comece a digitar..." oninput="updateStats()">
+        </div>
+        <div id="stats">
+            <p>Velocidade: <span id="wpm">0</span> WPM</p>
+            <button class="button" onclick="startPractice()">Prática</button>
+            <button class="button">Competições</button>
+            <button class="button">Estatísticas</button>
+        </div>
+    </div>
+
+    <script>
+        let startTime;
+        function updateStats() {
+            const inputText = document.getElementById('input-text').value;
+            const targetText = document.getElementById('target-text').innerText;
+            const elapsedTime = (new Date() - startTime) / 1000 / 60; // in minutes
+            const wordsTyped = inputText.split(' ').length;
+            const wpm = (wordsTyped / elapsedTime).toFixed(2);
+            document.getElementById('wpm').innerText = wpm;
+        }
+
+        function startPractice() {
+            document.getElementById('input-text').value = '';
+            startTime = new Date();
+            document.getElementById('input-text').focus();
+        }
+    </script>
+</body>
+</html>
